@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Eudoxus Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.theme-light .home {
+  background-color: #f6f3f3;
+  padding: 20px 70px;
+  min-height: calc(100vh - 70px);
+}
+@media (max-width: 480px) {
+  .theme-light .home {
+    padding: 10px;
+  }
+}
+.theme-dark .home {
+  background-color: #333;
+  padding: 20px 70px;
+  min-height: calc(100vh - 70px);
+}
+@media (max-width: 480px) {
+  .theme-dark .home {
+    padding: 10px;
+  }
+}/*# sourceMappingURL=Home.css.map */

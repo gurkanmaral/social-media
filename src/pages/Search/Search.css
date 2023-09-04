@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Eudoxus Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.theme-light .search {
+  background-color: #f6f3f3;
+  min-height: 100vh;
+  display: flex;
+}
+.theme-light .search .search-container {
+  display: flex;
+  padding: 30px 0px 0px 50px;
+  flex-direction: column;
+}
+.theme-light .search .search-container .user-search {
+  display: flex;
+  flex-direction: column;
+}
+.theme-light .search .search-container .user-search .user-info .user-container {
+  display: flex;
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  height: 100px;
+  align-items: center;
+  padding-left: 10px;
+}
+.theme-light .search .search-container .user-search .user-info .user-container .user-left {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.theme-light .search .search-container .user-search .user-info .user-container .user-left img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+.theme-light .search .search-container .post-search {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+.theme-light .search .search-container .post-search .posts-info {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 500px;
+}
+.theme-dark .search {
+  background-color: #333;
+  min-height: 100vh;
+  display: flex;
+}
+.theme-dark .search .search-container {
+  display: flex;
+  padding: 30px 0px 0px 50px;
+  flex-direction: column;
+}
+.theme-dark .search .search-container .user-search {
+  display: flex;
+  flex-direction: column;
+}
+.theme-dark .search .search-container .user-search .user-info .user-container {
+  display: flex;
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  height: 100px;
+  align-items: center;
+  padding-left: 10px;
+}
+.theme-dark .search .search-container .user-search .user-info .user-container .user-left {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.theme-dark .search .search-container .user-search .user-info .user-container .user-left img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+.theme-dark .search .search-container .post-search {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+.theme-dark .search .search-container .post-search .posts-info {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 500px;
+}/*# sourceMappingURL=Search.css.map */

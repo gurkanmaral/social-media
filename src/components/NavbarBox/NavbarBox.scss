@@ -1,0 +1,28 @@
+@import "../../styles.scss";
+
+.navbar-box{
+    @include themify($themes){
+    position: absolute;
+    top: 70px;
+    right: 200px;
+    width: 150px;
+    height: 110px;
+    border: 1px solid themed("border");
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: flex-end;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: themed("bg");
+
+    .navbar-box-profile{
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+    span{
+        cursor: pointer;
+    }
+}
+}

@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Eudoxus Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.theme-light .chatbox {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  height: 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-left: 40px;
+  bottom: -653px;
+  padding-right: 40px;
+  transition: height 0.3s ease; /* Transition for smooth animation */
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.theme-light .chatbox.open {
+  height: 600px; /* Increased height when chatbox is open */
+  display: flex;
+}
+.theme-light .chatbox .message-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+.theme-light .chatbox .message-icon .chat-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: #000;
+}
+.theme-light .chatbox .message-icon .chat-icon {
+  font-size: 35px;
+}
+.theme-light .chatbox .chat-users {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.theme-light .chatbox .chat-users .search-chat input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+}
+.theme-light .chatbox .chat-users .chat-user-container {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 20px;
+  overflow: auto;
+  height: 450px;
+  color: #000;
+}
+.theme-light .chatbox .chat-users .chat-user-container .chat-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.theme-light .chatbox .chat-users .chat-user-container .chat-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.theme-light .chatbox .chat-message-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.theme-light .chatbox .chat-message-container .chat-messages {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  height: 500px;
+  padding: 10px;
+}
+.theme-light .chatbox .chat-message-container .chat-input {
+  width: 100%;
+  display: flex;
+  margin-bottom: -10px;
+}
+.theme-dark .chatbox {
+  display: flex;
+  width: 100%;
+  background-color: #222;
+  position: absolute;
+  height: 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-left: 40px;
+  bottom: -653px;
+  padding-right: 40px;
+  transition: height 0.3s ease; /* Transition for smooth animation */
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.theme-dark .chatbox.open {
+  height: 600px; /* Increased height when chatbox is open */
+  display: flex;
+}
+.theme-dark .chatbox .message-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+.theme-dark .chatbox .message-icon .chat-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: whitesmoke;
+}
+.theme-dark .chatbox .message-icon .chat-icon {
+  font-size: 35px;
+}
+.theme-dark .chatbox .chat-users {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.theme-dark .chatbox .chat-users .search-chat input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+}
+.theme-dark .chatbox .chat-users .chat-user-container {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 20px;
+  overflow: auto;
+  height: 450px;
+  color: whitesmoke;
+}
+.theme-dark .chatbox .chat-users .chat-user-container .chat-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.theme-dark .chatbox .chat-users .chat-user-container .chat-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.theme-dark .chatbox .chat-message-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.theme-dark .chatbox .chat-message-container .chat-messages {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  height: 500px;
+  padding: 10px;
+}
+.theme-dark .chatbox .chat-message-container .chat-input {
+  width: 100%;
+  display: flex;
+  margin-bottom: -10px;
+}/*# sourceMappingURL=ChatBox.css.map */

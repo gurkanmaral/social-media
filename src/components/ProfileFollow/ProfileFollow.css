@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Eudoxus Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.theme-light .profileFollow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.theme-light .profileFollow ::-webkit-scrollbar {
+  display: none;
+}
+.theme-light .profileFollow .followWrapper {
+  margin: auto;
+  width: 40%;
+  height: 70%;
+  background-color: white;
+  padding: 20px 0px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.theme-light .profileFollow .followWrapper .closeButton {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+}
+.theme-light .profileFollow .followWrapper .closeButton h1 {
+  color: lightgrey;
+  flex: 1;
+}
+.theme-light .profileFollow .followWrapper .closeButton .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.theme-light .profileFollow .followWrapper .closeButton button {
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  height: 35px;
+  width: 50px;
+}
+.theme-light .profileFollow .followWrapper .followUsers {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: auto; /* Add scroll functionality */
+  max-height: 100%; /* Adjust the height to your preference */
+}
+.theme-light .profileFollow .followWrapper .followUsers .custom-link {
+  color: lightgrey;
+}
+.theme-light .profileFollow .followWrapper .followUsers .followUsersInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.theme-light .profileFollow .followWrapper .followUsers .followUsersInfo img {
+  width: 75px;
+  height: 75px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.theme-dark .profileFollow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.theme-dark .profileFollow ::-webkit-scrollbar {
+  display: none;
+}
+.theme-dark .profileFollow .followWrapper {
+  margin: auto;
+  width: 40%;
+  height: 70%;
+  background-color: #222;
+  padding: 20px 0px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.theme-dark .profileFollow .followWrapper .closeButton {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+}
+.theme-dark .profileFollow .followWrapper .closeButton h1 {
+  color: lightgrey;
+  flex: 1;
+}
+.theme-dark .profileFollow .followWrapper .closeButton .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.theme-dark .profileFollow .followWrapper .closeButton button {
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  height: 35px;
+  width: 50px;
+}
+.theme-dark .profileFollow .followWrapper .followUsers {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: auto; /* Add scroll functionality */
+  max-height: 100%; /* Adjust the height to your preference */
+}
+.theme-dark .profileFollow .followWrapper .followUsers .custom-link {
+  color: lightgrey;
+}
+.theme-dark .profileFollow .followWrapper .followUsers .followUsersInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.theme-dark .profileFollow .followWrapper .followUsers .followUsersInfo img {
+  width: 75px;
+  height: 75px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}/*# sourceMappingURL=ProfileFollow.css.map */

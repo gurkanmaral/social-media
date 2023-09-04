@@ -1,0 +1,37 @@
+@import "../../styles.scss";
+
+.input{
+    height: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    input{
+        width: 100%;
+        border: none;
+        outline: none;
+        color: #2f2d52;
+        font-size: 18px;
+        padding-left: 10px;
+        &::placeholder{
+            color: lightgray;
+        }
+    }
+
+    .send{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+                    button{
+                        border: none;
+                        height: 40px;
+                        width: 60px;
+                        color: white;
+                        background-color: black;
+                        
+                    }
+    }
+}

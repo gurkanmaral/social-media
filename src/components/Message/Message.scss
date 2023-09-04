@@ -1,0 +1,98 @@
+@import "../../styles.scss";
+
+.message{
+    @include themify($themes){
+    display: flex;
+    flex-direction: column;
+    height: 520px;
+    overflow: auto;
+    position: relative;
+    margin-top: 20px;
+    background-color: themed("bgSoft");
+    border-radius: 5px;
+        .message-chat{
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+            height: 490px;
+            position: relative;
+            width: 370px;
+            padding: 5px;
+            .message-button{
+                position: absolute;
+                width: 20%;
+            }
+            
+        
+
+    }
+    
+
+
+    .input-container {
+        z-index: 999;
+        position: absolute;
+        width: 374px;    
+        bottom: 11px;
+        height: 30px;
+        padding-right: 5px;
+       display: flex;
+       margin-right: 5px;
+       right: -9px;
+
+      }
+
+
+
+.chat-search-container{
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    
+    .search-chat{
+        display: flex;
+        width: 125px;
+        color: white;
+        flex-direction: column;
+        gap: 10px;
+        height: 520px;
+        overflow: auto;
+        border-right: 1px solid themed("border");
+        .search-chat-1{
+
+            input{
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                color: white;
+                outline: none;
+                border-bottom: 1px solid themed("border");
+                height: 30px;
+            }
+
+        }
+        .search-chat-2{
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            overflow-y: auto;
+            flex-grow: 1;
+      
+
+
+            .chat-item{
+                display: flex;
+                align-items: center;
+                margin-left: 5px;
+                gap: 2px;
+                img{
+                    border-radius: 50%;
+                   
+                }
+
+            }
+        }
+    }
+}
+}
+}

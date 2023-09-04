@@ -1,0 +1,145 @@
+.register {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    padding: 120px 24px 160px 24px;
+  
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    z-index: 9;
+
+    .gradient {
+        height: fit-content;
+        z-index: -1;
+        width: 100%;
+        max-width: 640px;
+        background-image: radial-gradient(
+            at 27% 37%,
+            hsla(215, 98%, 61%, 1) 0px,
+            transparent 0%
+          ),
+          radial-gradient(at 97% 21%, rgb(67, 105, 70) 0px, transparent 50%),
+          radial-gradient(at 52% 99%, rgb(184, 16, 33) 0px, transparent 50%),
+          radial-gradient(at 10% 29%, rgb(37, 1, 138) 0px, transparent 50%),
+          radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
+          radial-gradient(at 33% 50%, rgb(24, 50, 110) 0px, transparent 50%),
+          radial-gradient(at 79% 53%, rgb(212, 20, 74) 0px, transparent 50%);
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        filter: blur(100px) saturate(150%);
+        top: 80px;
+        opacity: 0.15;
+      }
+      .register-container{
+        width: 500px;
+        height: 600px;        
+      border-radius: 10px;
+      align-items: center;
+      justify-content: center;
+      
+        display: flex;
+        flex-direction: column;
+
+        .top{
+            display: flex;
+            
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            h1{
+                font-size: 40px;
+                font-weight: 700;
+
+            }
+            
+        }
+        .bottom{
+            display: flex;
+        
+            justify-content: center;
+
+             
+            
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 35px;
+                z-index: 100;
+                width: 300px;
+
+
+                input{
+                    border: none;
+                    border-bottom: 1px solid gray;
+                    background-color: inherit;
+                    height: 30px;
+                }
+                button{
+                    width: 100%;
+                    padding: 10px;
+                    border: none;
+                    background-color: #1108c4;
+                    cursor: pointer;
+                    color: white;
+                    font-weight: bold;
+                }
+                link{
+                    text-decoration: none;
+                    color: inherit;
+                   
+                }
+               
+            }
+        }
+    }
+
+  }    
+
+
+.login:before {
+    background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%);
+    position: absolute;
+    content: "";
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+
+  .login:after {
+    content: "";
+    background-image: url("");
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0.4;
+    filter: invert(1);
+  }
+
+  .login-div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+    
+  }
+
+  
+  @media (min-width: 600px) {
+    .register-container {
+      border: 1px solid black;
+      box-shadow: 0px 0px 5px 0px black;
+      background-color: rgb(255, 255, 255);
+    }
+  }
+  
+  
+  
